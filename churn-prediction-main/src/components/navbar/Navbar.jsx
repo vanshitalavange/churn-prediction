@@ -34,7 +34,7 @@ const Navbar = () => {
           <p><a href="#wgpt3">Churn Prediction</a></p>
           <p><a href="#possibility">Visualization</a></p>
           <p><a href="#features">Recommendation</a></p>
-          <p><a href="#blog">Contact US</a></p>
+          <p><a href="#blog">Contact Us</a></p>
         </div>
       </div>
       <div className="gpt3__navbar-sign">
@@ -52,7 +52,7 @@ const Navbar = () => {
             <p><a href="#wgpt3">Our Subscriptions</a></p>
             <p><a href="#possibility">Visualization</a></p>
             <p><a href="#features">Case Studies</a></p>
-            <p><a href="#blog">Contact US</a></p>
+            <p><a href="#blog">Contact Us</a></p>
           </div>
           <div className="gpt3__navbar-menu_container-links-sign">
             <p onClick={() => navigate("/login")}>Sign in</p>

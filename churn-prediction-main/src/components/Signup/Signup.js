@@ -51,11 +51,11 @@ export default function Signup({ update }) {
             <Container className="container" sx={{ display: 'flex' }}>
                 <div>
                     <div className="form-ctn">
-                        <h1>Signup</h1>
+                        <h1 class="form-heading">Sign Up</h1>
                         <TextField id="outlined-basic" label="Username" variant="outlined" value={registerEmail} onChange={(e) => setRegisterEmail(e.target.value)} />
                         <TextField id="outlined-basic" label="Password" type="password" variant="outlined" value={registerPassword} onChange={(e) => setRegisterPassword(e.target.value)} />
                         {/* <TextField id="outlined-basic" label="Password" variant="outlined" value={registerPassword} onChange={(e) => setRegisterPassword(e.target.value)} /> */}
-                        <Button variant="contained" onClick={register}>Submit</Button>
+                        <Button class="btn-submit" variant="contained" onClick={register}>Submit</Button>
                     </div>
                 </div>
             </Container>

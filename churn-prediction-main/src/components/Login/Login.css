@@ -1,0 +1,21 @@
+/** @format */
+
+.btn-submit {
+  /* background: var(--gradient-text); */
+  background-color: #fc491a;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.form-heading {
+  text-align: center;
+  color: #040c18;
+  /* font-family: 'M', sans-serif; */
+  /* font-family: 'Noto Sans', sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0;
+}

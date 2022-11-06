@@ -8,7 +8,7 @@ const Header = () => (
   <div className="gpt3__header section__padding" id="home">
     <div className="gpt3__header-content">
       <h1 className="gradient__text">Churn Prediction for Telecommunication</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam iure quaerat architecto obcaecati blanditiis repellendus ipsa odio in deleniti modi. Earum quae molestiae eveniet accusamus vero consequatur recusandae veniam perferendis!
+      <p>The objective is to measure the impact of churn factors on customer loyalty and to discover ways to manage customer churn. It uses predictive analytics techniques to develop churn prediction models that predict customer churn by assessing the tendency of probability to churn
       </p>
 
       <div className="gpt3__header-content__input">

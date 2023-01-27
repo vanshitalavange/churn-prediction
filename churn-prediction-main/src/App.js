@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './components/MainPage';
 import Login from './components/Login';
 import Signup from "./components/Signup/Signup";
+import { Map } from './components/map/Map';
 import { auth } from "./firebase-config";
 
 import './App.css';
@@ -15,7 +16,7 @@ const App = () => (
       <Route path="/" element={<MainPage/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
-
+      <Route path="/map" element={<Map/>}/>
     </Routes>
   </Router>
 );

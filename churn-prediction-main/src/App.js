@@ -4,7 +4,9 @@ import MainPage from './components/MainPage';
 import Login from './components/Login';
 import Signup from "./components/Signup/Signup";
 import { Map } from './components/map/Map';
+import { SendData } from './components/sendData/SendData';
 import { auth } from "./firebase-config";
+import { FetchData } from './components/fetchData/FetchData';
 
 import './App.css';
 
@@ -17,6 +19,8 @@ const App = () => (
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/map" element={<Map/>}/>
+      <Route path="/fetch" element={<FetchData/>}/>
+      <Route path="/send" element={<SendData/>}/>
     </Routes>
   </Router>
 );

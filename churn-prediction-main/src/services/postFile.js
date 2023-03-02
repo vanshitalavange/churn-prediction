@@ -6,7 +6,7 @@ export const postFile = async (formData) => {
             method: 'post',
             body: formData
         })
-        return response.status
+        return response
     } catch (e) {
         console.log(e)
     }

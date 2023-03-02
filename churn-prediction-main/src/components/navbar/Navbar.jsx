@@ -31,10 +31,11 @@ const Navbar = () => {
         </div>
         <div className="gpt3__navbar-links_container">
           <p onClick={() => navigate("/")}><a href="#home">Home</a></p>
-          <p><a href="#wgpt3">Churn Prediction</a></p>
+          <p><a href="/predict-churn">Churn Prediction</a></p>
           <p><a href="/map">Visualization</a></p>
+          <p><a href="#features">Analytics</a></p>
           <p><a href="#features">Recommendation</a></p>
-          <p><a href="#blog">About</a></p>
+          {/* <p><a href="#blog">About</a></p> */}
         </div>
       </div>
       <div className="gpt3__navbar-sign">

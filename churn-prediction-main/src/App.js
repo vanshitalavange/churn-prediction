@@ -22,7 +22,7 @@ const App = () => (
       <Route path="/map" element={<Map />} />
       <Route path="/fetch" element={<FetchData />} />
       <Route path="/send" element={<SendData />} />
-      <Route path="/sendExcel" element={<SendExcelFile />} />
+      <Route path="/predict-churn" element={<SendExcelFile />} />
     </Routes>
   </Router>
 );

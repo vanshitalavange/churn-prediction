@@ -11,13 +11,10 @@ import os
 from flask import session
 # session.secret
 app = Flask(__name__)
-app.secret_key = "super secret key"
-print("I am the start of server.py")
+
 # root directory
 cwd = os.getcwd()
 path = os.sep.join(cwd.split(os.sep)[:-1])
-df_sheet1 = None
-df_sheet2 = None
 
 @app.route("/get_data")
 

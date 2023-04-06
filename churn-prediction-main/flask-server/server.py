@@ -144,14 +144,14 @@ def upload_excel():
                 showline=False,
                 showticklabels=False,
             ))
-        return {"computation":"done"}
-    except:
-        print("upload excel's mistake")
-    finally:
         df_input.to_excel(r"{}\public\charts\output.xlsx".format(path))
         fig.write_html(r"{}\public\charts\age-based.html".format(path))
         figg.write_html(r"{}\public\charts\peak-hour.html".format(path))
-        print("all complete")
+        # return {"computation":"done"}
+    except:
+        print("upload excel's mistake")
+    finally:
+        return {"response":"ok"}
 
 def recommendation():
     df_sheet1 = read_file("sheet1")

@@ -1,0 +1,12 @@
+.contact-field{
+    padding:1rem;
+}
+
+.btn-contact{
+    border:none;
+    background-color: #ff4820;
+    color:white;
+    padding:1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}

@@ -1,0 +1,16 @@
+.section-container{
+    color:white;
+    font-family: var(--font-family);
+    margin-bottom: 2rem;
+}
+.container-heading{
+    margin-top:2rem;
+    text-align: center;
+
+}
+.container-content{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    margin-left:5rem;
+    margin-right:5rem
+}

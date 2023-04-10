@@ -1,13 +1,11 @@
 import axios from "axios"
-
 export const postFile = async (formData) => {
-    try {
-        const response = await fetch("/upload_excel", {
+
+        return fetch("/upload_excel", {
             method: 'post',
             body: formData
-        })
-        return response
-    } catch (e) {
-        console.log(e)
-    }
+        }).then(res => res.json()).then(data => {
+            localStorage.setItem("response",JSON.stringify(data))
+            // return data 
+        }).catch((error) => localStorage.setItem("error",error))
 }

@@ -1,6 +1,6 @@
 // import Customer from './Customer'
 import { TableEntry } from './TableEntry'
-
+import "./Table.css"
 export const Table = ({customers}) => {
 
   return (

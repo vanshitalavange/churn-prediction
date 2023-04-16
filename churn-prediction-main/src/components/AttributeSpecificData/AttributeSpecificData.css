@@ -1,0 +1,12 @@
+.table-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table-heading{
+    margin-top: 1rem;
+    margin-bottom:2rem;
+    font-family: var(--font-family);
+    font-size: 25px;
+    color:white
+}

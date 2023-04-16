@@ -11,7 +11,8 @@ import { SendData } from './components/sendData/SendData';
 import { auth } from "./firebase-config";
 import { FetchData } from './components/fetchData/FetchData';
 import { SendExcelFile } from './components/sendData/SendExcelFile';
-import {AttributeSpecificData} from "./components/AttributeSpecificData/AttributeSpecificData"
+import { Tieups } from "./components/Tieups/Tieups"
+import { AttributeSpecificData } from "./components/AttributeSpecificData/AttributeSpecificData"
 import { AuthProvider } from './auth-context';
 
 import './App.css';
@@ -30,7 +31,8 @@ const App = () => (
       <Route path="/predict-churn" element={<SendExcelFile />} />
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/contactus" element={<ContactUs />} />
-      <Route path="/tieups" element={<AttributeSpecificData/>}/>
+      <Route path="/customerdata" element={<AttributeSpecificData />} />
+      <Route path="/tieups" element={<Tieups />} />
     </Routes>
   </Router>
   </AuthProvider>

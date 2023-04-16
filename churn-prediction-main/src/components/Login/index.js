@@ -56,7 +56,7 @@ export default function Login({ update }) {
         <div>
           <div className="form-ctn">
             <h1 class="form-heading">Login</h1>
-            <TextField onChange={(event) => setLoginEmail(event.target.value)} id="outlined-basic" label="Username" variant="outlined" value={loginEmail} />
+            <TextField onChange={(event) => setLoginEmail(event.target.value)} id="outlined-basic" label="Email" variant="outlined" value={loginEmail} />
             <TextField onChange={(event) => setLoginPassword(event.target.value)} type="password" id="outlined-basic" label="Password" variant="outlined" value={loginPassword} />
             <Button class="btn-submit" variant="contained" onClick={login}>Submit</Button>
           </div>

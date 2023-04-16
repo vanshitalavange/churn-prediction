@@ -9,6 +9,7 @@ import plotly.express as px
 import numpy as np
 import os
 from flask import session
+import json
 # session.secret
 app = Flask(__name__)
 
@@ -144,14 +145,13 @@ def upload_excel():
                 showline=False,
                 showticklabels=False,
             ))
-        
-        # return {"computation":"done"}
-        df_input.to_excel(r"{}\public\charts\output.xlsx".format(path))
-        fig.write_html(r"{}\public\charts\age-based.html".format(path))
-        figg.write_html(r"{}\public\charts\peak-hour.html".format(path))
+        # df_input.to_excel(r"{}\public\charts\output.xlsx".format(path))
+        # fig.write_html(r"{}\public\charts\age-based.html".format(path))
+        # figg.write_html(r"{}\public\charts\peak-hour.html".format(path))
     except:
         print("upload excel's mistake")
     finally:
+        # print(json1)
         return {"response":"ok"}
 
 def recommendation():

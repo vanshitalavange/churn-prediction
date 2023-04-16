@@ -3,6 +3,8 @@ import { postFile } from "../../services/postFile"
 import Navbar from "../navbar/Navbar"
 import { Footer } from "../../containers"
 import { Link } from "react-router-dom"
+import { read, utils } from "xlsx";
+import { useAuthContext } from "../../auth-context"
 import "./SendExcelFile.css"
 
 export const SendExcelFile = () => {
@@ -10,6 +12,8 @@ export const SendExcelFile = () => {
     const [excelData, setExcelData] = useState()
     const [dataStatus, setDataStatus] = useState("pending")
     const [excelFile, setExcelFile] = useState()
+    const { filteredUsers, setFilteredUsers } = useAuthContext()
+    const [jsonData,setJsonData] = useState(null)
 
     useEffect(() => {
         if (localStorage.getItem("response") !== null) {
@@ -18,8 +22,21 @@ export const SendExcelFile = () => {
 
     }, [localStorage.getItem("response")])
 
-    const handleFile = (e) => {
+
+    useEffect(() => {
+        if(jsonData !== null){
+            setFilteredUsers({attempt:"first",json:jsonData})
+        }
+    },[jsonData])
+
+    const handleFile = async (e) => {
         setFileData(e.target.files[0])
+        const file = e.target.files[0]
+        const data = await file.arrayBuffer();
+        const workbook = read(data);
+        const worksheet = workbook.Sheets[workbook.SheetNames[1]];
+        const json = utils.sheet_to_json(worksheet);
+        setJsonData(json)
     }
     const handleSubmit = async () => {
         if (fileData != null) {

@@ -6,11 +6,15 @@ th {
   text-align: center;
   font-family: var(--font-family);
 }
+thead{
+  background-color: #ff4820;
+}
 th {
   padding: 20px 15px;
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
+  /* background-color: #ff4820; */
 }
 td {
   padding: 15px;

@@ -7,5 +7,8 @@ export const postFile = async (formData) => {
         }).then(res => res.json()).then(data => {
             localStorage.setItem("response",JSON.stringify(data))
             // return data 
-        }).catch((error) => localStorage.setItem("error",error))
+        }).catch((error) => {
+            alert("Something went wrong, please login again")
+            localStorage.setItem("error",error)
+        })
 }

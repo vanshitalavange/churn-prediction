@@ -2,11 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin:1rem 10rem
 }
 .table-heading{
-    margin-top: 1rem;
-    margin-bottom:2rem;
+    /* margin-top: 1rem;
+    margin-bottom:2rem; */
     font-family: var(--font-family);
-    font-size: 25px;
+    font-size: 30px;
     color:white
+}
+.title-img-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin-bottom: 3rem;
+}
+.vendor-imgs{
+    display: flex;
+}
+.vendor-imgs img{
+    width:8rem;
+    height:6rem;
+    margin-right:1rem;
 }

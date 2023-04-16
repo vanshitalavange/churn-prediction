@@ -9,7 +9,7 @@ import plotly.express as px
 import numpy as np
 import os
 from flask import session
-import json
+import time
 # session.secret
 app = Flask(__name__)
 
@@ -151,6 +151,7 @@ def upload_excel():
     except:
         print("upload excel's mistake")
     finally:
+        # time.sleep(1)
         return {"response":"ok"}
 
 def recommendation():

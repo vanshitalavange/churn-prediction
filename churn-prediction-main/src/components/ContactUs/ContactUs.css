@@ -10,3 +10,23 @@
     font-size: 1rem;
     border-radius: 5px;
 }
+.contact-msg-delivered{
+    margin:5rem auto;
+    background-color:#0A9F81;
+    padding:3rem 4rem;
+    width:fit-content;
+    border-radius: 13px;
+}
+.contact-msg-delivered-text{
+    font-family: var(--font-family);
+    font-size: 20px;
+    color:white;
+    max-width:25rem
+}
+.contact-msg-thank-you{
+    font-family: var(--font-family);
+    font-size: 2.5rem;
+    color:white;
+    text-align: center;
+    padding-bottom: 1rem;
+}

@@ -5,12 +5,15 @@ import Netflix from "./netflix.jpg"
 import Prime from "./prime.png"
 import Disney from "./disney.jpg"
 import { useNavigate } from "react-router-dom"
+import { useAuthContext } from "../../auth-context"
+
 export const Tieups = () => {
     const creditCard = JSON.parse(localStorage.getItem('creditCard'))
     const security = JSON.parse(localStorage.getItem('security'))
+    const movie = JSON.parse(localStorage.getItem('movie'))
     console.log(creditCard, security)
     const navigate = useNavigate()
-    const cardData = [{ text: "Online Payments", data: creditCard }, { text: "Online Security", data: security }, {text:"Movie Streaming",data:[]}]
+    const cardData = [{ text: "Online Payments", data: creditCard }, { text: "Online Security", data: security }, {text:"Movie Streaming",data:movie}]
     return (
         <div>
             <Navbar />

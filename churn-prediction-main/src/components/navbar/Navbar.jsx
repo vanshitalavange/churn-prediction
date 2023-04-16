@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../logo.svg';
 import { useNavigate } from 'react-router-dom';
@@ -18,7 +18,7 @@ const Navbar = () => {
   const [showDropDown, setShowDropDown] = useState(false)
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
-  // const {user} 
+  const [hasPredictedChurn, setHasPredictedChurn] = useState(false)
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
@@ -26,6 +26,12 @@ const Navbar = () => {
   const logout = async () => {
     await signOut(auth);
   };
+  useEffect(() => {
+    if (localStorage.getItem('response') !== null) {
+      setHasPredictedChurn(true)
+    }
+  }, [localStorage.getItem('response')])
+
   return (
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
@@ -35,15 +41,15 @@ const Navbar = () => {
         <div className="gpt3__navbar-links_container">
           <p onClick={() => navigate("/")}><a href="#home">Home</a></p>
           <p><a href={`${user ? "/predict-churn" : "/login"} `}>Churn Prediction</a></p>
-          <p><a href={`${user ? "charts/geo.html" : "/login"}`}>Visualization</a></p>
-          <p style={{position:"relative"}} onClick={() => setShowDropDown((state) => !state)}>
-             Analytics
-            <div className={`${showDropDown ? `analytics-dropdown-visible` : `analytics-dropdown-invisible`}`} style={{flexDirection:"column",position:"absolute", left:"-2.5rem",textAlign:"center", width:"10rem",top:"2.2rem", padding:"0.5rem 0.2rem", gap:"1rem",backgroundColor:"#ff4820",borderRadius:"5px"}}>
-              <p className="dropdown-option"><a href={`${user ? "/charts/age-based.html" : "/login"}`}>age distribution</a></p>
-              <p className="dropdown-option"><a href={`${user ? "/charts/peak-hour.html" : "/login"}`}>peak hour distribution</a></p>
+          <p><a href={`${user ? hasPredictedChurn ? '/charts/geo.html' : '/predict-churn' : '/login'}`}>Visualization</a></p>
+          <p style={{ position: "relative" }} onClick={() => setShowDropDown((state) => !state)}>
+            Analytics
+            <div className={`${showDropDown ? `analytics-dropdown-visible` : `analytics-dropdown-invisible`}`} style={{ flexDirection: "column", position: "absolute", left: "-2.5rem", textAlign: "center", width: "10rem", top: "2.2rem", padding: "0.5rem 0.2rem", gap: "1rem", backgroundColor: "#ff4820", borderRadius: "5px" }}>
+              <p className="dropdown-option"><a href={`${user ? hasPredictedChurn ? '/charts/age-based.html' : '/predict-churn' : '/login'}`}>age distribution</a></p>
+              <p className="dropdown-option"><a href={`${user ? hasPredictedChurn ? '/charts/peak-hour.html' : '/predict-churn' : '/login'}`}>peak hour distribution</a></p>
             </div>
           </p>
-          <p><a href="#features">Recommendation</a></p>
+          <p onClick={() => navigate("/tieups")}><a href="#features">Recommendation</a></p>
           {/* <p><a href="#blog">About</a></p> */}
         </div>
       </div>

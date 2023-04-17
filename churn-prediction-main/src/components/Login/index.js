@@ -7,6 +7,7 @@ import TextField from "@mui/material/TextField";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Navbar from "../../components/navbar/Navbar"
+import Footer from "../../containers/footer/Footer"
 import { Link } from 'react-router-dom';
 import {
   createUserWithEmailAndPassword,
@@ -62,6 +63,7 @@ export default function Login({ update }) {
           </div>
         </div>
       </Container>
+      <Footer/>
     </div>
   )
 }

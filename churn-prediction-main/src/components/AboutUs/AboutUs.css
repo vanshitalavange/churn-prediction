@@ -2,6 +2,7 @@
     color:white;
     font-family: var(--font-family);
     margin-bottom: 2rem;
+    /* margin-top:2rem */
 }
 .container-heading{
     margin-top:2rem;
@@ -13,4 +14,11 @@
     font-size: 1.2rem;
     margin-left:5rem;
     margin-right:5rem
+}
+.team-name{
+    font-family: var(--font-family);
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top:0.5rem
 }

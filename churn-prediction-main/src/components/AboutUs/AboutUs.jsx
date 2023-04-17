@@ -28,21 +28,21 @@ export const AboutUs = () => {
             </div>
             <div className="section-container">
                 <h1 className="container-heading">Meet our team</h1>
-                <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", marginTop: "2rem" }}>
-                    <div>
-                        <img src={Mamta} width={300} height={300} />
+                <div style={{ display: "flex", gap: "3rem", justifyContent: "center", marginTop: "3rem", marginBottom:"3rem" }}>
+                    <div className="team-wrapper">
+                        <img src={Mamta} width={300} height={300} className="team-img" />
                         <p className="team-name">Mamta Bandgar</p>
                     </div>
-                    <div>
-                        <img src={Vedant} width={300} height={300} />
+                    <div className="team-wrapper">
+                        <img src={Vedant} width={300} height={300} className="team-img" />
                         <p className="team-name">Vedant Kathe</p>
                     </div>
-                    <div>
-                        <img src={Sakshi} width={300} height={300} />
+                    <div className="team-wrapper">
+                        <img src={Sakshi} width={300} height={300} className="team-img"/>
                         <p className="team-name">Sakshi Khair</p>
                     </div>
-                    <div>
-                        <img src={Vanshita} width={300} height={300} />
+                    <div className="team-wrapper">
+                        <img src={Vanshita} width={300} height={300} className="team-img"/>
                         <p className="team-name">Vanshita Lavange</p>
                     </div>
                 </div>

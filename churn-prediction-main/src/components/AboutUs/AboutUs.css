@@ -1,24 +1,36 @@
-.section-container{
-    color:white;
-    font-family: var(--font-family);
-    margin-bottom: 2rem;
-    /* margin-top:2rem */
-}
-.container-heading{
-    margin-top:2rem;
-    text-align: center;
+/** @format */
 
+.section-container {
+  font-family: var(--font-family);
+  margin-bottom: 2rem;
+  /* margin-top:2rem */
 }
-.container-content{
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    margin-left:5rem;
-    margin-right:5rem
+.container-heading {
+  margin-top: 2rem;
+  text-align: center;
+  color:#ff7420;
+  font-size: 2.5rem;
+  /* background: linear-gradient(to right top, #ff4820, #ff343b, #ff1f52, #ff0769, #ff007f); */
 }
-.team-name{
-    font-family: var(--font-family);
-    font-size: 1.7rem;
-    font-weight: 700;
-    text-align: center;
-    padding-top:0.5rem
+.container-content {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color: white;
+}
+.team-name {
+  font-family: var(--font-family);
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 1rem;
+  color:white
+}
+.team-wrapper {
+  /* border-radius: 50%; */
+}
+.team-img {
+  border-radius: 50%;
+  border: 8px solid #ff4820;
 }

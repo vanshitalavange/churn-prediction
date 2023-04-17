@@ -15,24 +15,25 @@
     align-items: center;
 }
 .vendors h1{
-    color:white;
     font-family: var(--font-family);
-    /* font-size: 20px; */
+    color:white
 }
 .customer-data{
-    background-color:#D3FBD8;
+    background-color:#ff4820;
+    color:white;
     width: fit-content;
     padding:2rem 3rem;
-    /* height:5rem; */
     border-radius: 13px;
 }
 .customer-data:hover{
     cursor: pointer;
+    background-color: #d83e1b;
 }
 .card-text{
     font-family: var(--font-family);
     width:10rem;
     text-align: center;
+    font-weight: bold;
 }
 .cards-wrapper{
     margin-top:3rem;

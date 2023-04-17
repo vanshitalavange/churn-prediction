@@ -5,22 +5,22 @@ import './features.css';
 const featuresData = [
   {
     title: 'Churn Prediction',
-    text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.',
+    text: 'With our churn prediction platform, businesses can gain a deeper understanding of their customers behavior, preferences, and needs, and tailor their strategies accordingly.',
     path: '/'
   },
   {
     title: 'Visualization',
-    text: 'Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+    text: 'Geospatial Distribution shows the geographical distribution of the telecom service users in various geographical areas which will support the decision-makers.',
     path: '/map'
   },
   {
     title: 'Analytics',
-    text: 'Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.',
+    text: 'Quick Analytics briefs about a particular spectrum within a glance. Out of the box, line charts, and bar plot visualizations to get the essence of the business process at a glance.',
     path: '/'
   },
   {
-    title: 'Recommendation',
-    text: 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush..',
+    title: 'Tie-up offers',
+    text: 'The tie-up offers page will specify tie-ups for customers.',
     path: '/'
   },
 ];

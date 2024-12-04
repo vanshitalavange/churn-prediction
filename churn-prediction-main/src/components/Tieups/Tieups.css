@@ -1,0 +1,43 @@
+.tieups{
+    margin:3rem 7rem;
+    margin-bottom: 10rem;
+}
+.vendor-imgs{
+    display: flex;
+}
+.vendor-imgs img{
+    width:8rem;
+    margin-right:1rem;
+}
+.vendors{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vendors h1{
+    font-family: var(--font-family);
+    color:white
+}
+.customer-data{
+    background-color:#ff4820;
+    color:white;
+    width: fit-content;
+    padding:2rem 3rem;
+    border-radius: 13px;
+}
+.customer-data:hover{
+    cursor: pointer;
+    background-color: #d83e1b;
+}
+.card-text{
+    font-family: var(--font-family);
+    width:10rem;
+    text-align: center;
+    font-weight: bold;
+}
+.cards-wrapper{
+    margin-top:3rem;
+    display: flex;
+    gap:1.5rem;
+    flex-wrap: wrap;
+}

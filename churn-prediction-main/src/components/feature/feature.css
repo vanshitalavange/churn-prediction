@@ -35,6 +35,8 @@
     flex: 2;
     max-width: 390px;
     display: flex;
+    color:#fff;
+    font-family: var(--font-family);
 }
 
 .gpt3__features-container_feature-text p {
